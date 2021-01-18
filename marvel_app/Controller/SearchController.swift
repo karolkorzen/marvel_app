@@ -140,7 +140,7 @@ extension SearchController: UISearchResultsUpdating{
                     self.loading.isHidden = true
                     if numberOfFindings == 0 {
                         let label = self.stack.subviews.last as! UILabel
-                        label.text = "There is no comic book \"\(searchText)\" in our library. Check the spelling and try again."
+                        label.text = "There is no comic book \"\(searchController.searchBar.text!)\" in our library. Check the spelling and try again."
                         self.stack.isHidden = false
                         self.collectionView.isHidden = true
                     } else {
