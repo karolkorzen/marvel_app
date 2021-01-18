@@ -27,22 +27,18 @@ class SearchController: UICollectionViewController {
     private var infoSearchLabel = Utilities.shared.standardLabel(withSize: 18, withWeight: .medium, withColor: UIColor.rgb(red: 38, green: 36, blue: 36))
     private var bookImage = Utilities.shared.thumbnailImageView()
     var stack = UIStackView()
-    let loading = SpinnerView()
+    let loading = Utilities.shared.thumbnailImageView()
     
     // MARK: - lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
         configureUI()
         configureSearchController()
+        configureNavBar()
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        navigationController?.navigationBar.tintColor = UIColor.rgb(red: 177, green: 177, blue: 177)
-        navigationController?.navigationBar.isTranslucent = false
-        navigationController?.navigationBar.layer.borderWidth = 0.50
-        navigationController?.navigationBar.layer.borderColor = UIColor.clear.cgColor
-        navigationController?.navigationBar.clipsToBounds = true
     }
     
     // MARK: - Helpers
@@ -71,8 +67,9 @@ class SearchController: UICollectionViewController {
         stack.center(inView: view)
         
         view.addSubview(loading)
+        loading.image = UIImage(named: "loader_icon")
         loading.center(inView: view)
-        loading.setDimensions(width: 30, height: 30)
+        loading.rotate()
         loading.isHidden = true
     }
     
@@ -85,6 +82,14 @@ class SearchController: UICollectionViewController {
         let searchBarStyle = searchController.searchBar.value(forKey: "searchField") as? UITextField
         searchBarStyle?.clearButtonMode = .never
         navigationItem.searchController = searchController
+    }
+    
+    func configureNavBar() {
+        navigationController?.navigationBar.tintColor = UIColor.rgb(red: 177, green: 177, blue: 177)
+        navigationController?.navigationBar.isTranslucent = false
+        navigationController?.navigationBar.layer.borderWidth = 0.50
+        navigationController?.navigationBar.layer.borderColor = UIColor.clear.cgColor
+        navigationController?.navigationBar.clipsToBounds = true
     }
 }
 
