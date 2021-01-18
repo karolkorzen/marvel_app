@@ -17,7 +17,7 @@ class MarvelService {
     /// - Parameter completion: Comics
     func fetchComics(completion: @escaping((RawComicsResponse) -> Void)){
         
-        let fetchLink = "https://gateway.marvel.com/v1/public/comics?ts=1&apikey=\(MarvelService.api_key)&hash=\(MarvelService.hash_key)&limit=25&offset=0"
+        let fetchLink = "https://gateway.marvel.com/v1/public/comics?ts=1&apikey=\(MarvelService.api_key)&hash=\(MarvelService.hash_key)&limit=25&offset=70"
         print("DEBUG: fetchLink -> \(fetchLink)")
         guard let url = URL(string: fetchLink) else {return}
         
