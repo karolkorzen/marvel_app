@@ -15,4 +15,4 @@ Data fetched from Marvel API (https://developer.marvel.com)
 
 ## Scenes_Preview
 
-<img src="./marvel_app/Previews/0.png" width="33%"> <img src="./marvel_app/Previews/1.png" width="33%"> <img src="./marvel_app/Previews/2.png" width="33%">
+<img src="./marvel_app/Previews/3.png" width="33%"> <img src="./marvel_app/Previews/1.png" width="33%"> <img src="./marvel_app/Previews/2.png" width="33%">
