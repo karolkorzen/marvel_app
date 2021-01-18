@@ -24,7 +24,6 @@
 		4BC4682E25B4AACE00CD2864 /* ComicsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BC4682D25B4AACE00CD2864 /* ComicsViewModel.swift */; };
 		4BC4683225B4C06500CD2864 /* ComicViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BC4683125B4C06500CD2864 /* ComicViewModel.swift */; };
 		4BC4683525B4CEB300CD2864 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BC4683425B4CEB300CD2864 /* Utilities.swift */; };
-		4BEBF81625B5F79900C113F3 /* SpinnerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BEBF81525B5F79900C113F3 /* SpinnerView.swift */; };
 		676AE92C9D0E02FC013AB1CB /* Pods_marvel_app.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C52F9EFAF3F605DDB0BC767 /* Pods_marvel_app.framework */; };
 /* End PBXBuildFile section */
 
@@ -51,7 +50,6 @@
 		4BC4682D25B4AACE00CD2864 /* ComicsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicsViewModel.swift; sourceTree = "<group>"; };
 		4BC4683125B4C06500CD2864 /* ComicViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicViewModel.swift; sourceTree = "<group>"; };
 		4BC4683425B4CEB300CD2864 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
-		4BEBF81525B5F79900C113F3 /* SpinnerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinnerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,7 +160,6 @@
 			children = (
 				4BC4682325B4A90C00CD2864 /* ComicCell.swift */,
 				4BC4682A25B4A95C00CD2864 /* DescriptionView.swift */,
-				4BEBF81525B5F79900C113F3 /* SpinnerView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -290,7 +287,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				4B35F5DA25B0A8C200351A25 /* HomeController.swift in Sources */,
-				4BEBF81625B5F79900C113F3 /* SpinnerView.swift in Sources */,
 				4B35F5DD25B0A8CB00351A25 /* SearchController.swift in Sources */,
 				4B35F5D525B09DF000351A25 /* TabBarController.swift in Sources */,
 				4BC4683525B4CEB300CD2864 /* Utilities.swift in Sources */,
